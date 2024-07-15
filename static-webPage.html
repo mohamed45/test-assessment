@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="/image/logo.PNG" alt="Logo" />
+        <span>Logo</span>
+      </div>
+      <div class="right-div">
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button class="search-button">
+            <!-- <img src="search-icon.png" alt="Search"> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="#1E90FF"
+            >
+              <path
+                d="M10 2C5.58 2 2 5.58 2 10s3.58 8 8 8c1.85 0 3.55-.63 4.9-1.69l5.29 5.29 1.41-1.41-5.29-5.29C17.37 13.55 18 11.85 18 10c0-4.42-3.58-8-8-8zM4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="icons">
+          <img src="/image/global.png" alt="Globe" />
+        </div>
+        <div class="icons">
+          <img src="/image/notification-icon.PNG" alt="Notification" />
+        </div>
+        <!-- <select name="selectTag" id="se">
+        <option></option>
+        <option></option>
+        <option></option>
+        <option></option>
+      </select> -->
+        <div class="profile">
+          <img src="image/profile-picture.png" alt="Profile" />
+          <div class="profile-info">
+            <span>John Doe</span> <span>Admin</span>
+          </div>
+          <button class="dropdown-button">&#x25BC;</button>
+        </div>
+      </div>
+    </header>
+    <div class="sidebar">
+        <a href="#home" class="Active" ><img src="image/home (1).svg" > Home</a>
+        
+
+        <a href="#operation" ><i class="fa fa-exchange-alt"></i> Operation</a>
+        
+        <a href="#map"><img src="/image/map.svg" class="fa fa-map-marker-alt"></img> Map</a>
+        <a href="#reports"><img src="/image/report.svg" class="fa fa-chart-bar"></img> Reports</a>
+        <a href="#control"><i class="fa fa-cogs"></i> Control Panel</a>
+      </div>
+      
+      <div class="main-content">
+        <div class="left-panel">
+          <h2>Welcome! John Doe</h2>
+          <p>Content for the left panel goes here.</p>
+          <!-- Add more content as needed -->
+        </div>
+        <div class="right-panel">
+          <h2>Active Vehicles Vs. In-Active Vehicles</h2>
+          <p>Content for the right panel goes here.</p>
+          <!-- Add more content as needed -->
+        </div>
+      </div>
+      
+      <!-- FontAwesome Icons -->
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script>
+  document.querySelectorAll('.sidebar a').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelectorAll('.sidebar a').forEach(item => item.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+  </body>
+</html>
