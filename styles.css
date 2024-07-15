@@ -105,9 +105,9 @@ body {
     position: fixed;
     left: 0;
     top: 150;
-    background-color: white;
-    padding-top: 20px;
-    border-right: 1px solid #dee2e6;
+    background-color: none;
+    padding-top: 25px;
+    border-right: none;
   }
 
   .sidebar a {
@@ -149,7 +149,7 @@ body {
   /* add more */
 
   .main-content {
-    margin-left:200px;
+    margin-left:180px;
     margin-top: 50px;
     /* width: 200px; */
     display: flex;
